@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+}
+
+
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  z-index: 3;
+
+  nav {
+    .cartInformation {
+      span {
+        padding: 4px 8px;
+        border-radius: 50%;
+        background-color: #a5c926;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.modal-dialog,
+.modal-content {
+  height: 45%;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .cardTextBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      background-color: #a5c926;
+      border-radius: 9px;
+      color: white;
+      width: 50%;
+    }
+  }
+
+  .line {
+    width: 100%;
+    display: flex;
+    margin: 25px 0px;
+
+    .green {
+      width: 15%;
+      height: 3px;
+      background-color: #a5c926;
+    }
+
+    .gray {
+      width: 85%;
+      height: 3px;
+      background-color: rgb(186, 181, 181);
+    }
+  }
+
+  #helloToyStore {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .helloBox {
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      max-width: 570px;
+      min-height: 300px;
+      background-color: #fff;
+
+      span {
+        margin-bottom: 16px;
+        color: #a5c926;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 600;
+      }
+
+      h1 {
+        width: 80%;
+        margin-bottom: 20px;
+        font-family: "Varela Round", sans-serif;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 400;
+      }
+
+      button {
+        height: 48px;
+        padding: 12px 20px;
+        border: none;
+        justify-content: center;
+        border-radius: 24px;
+        background-color: #a5c926;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+  #shopNow{
+    width: 100%;
+    display: flex;
+    a{
+      margin: auto;
+      margin-top: -55px;
+      text-decoration: none;
+      background-color: #fff;
+      padding: 15px 15px;
+      border-radius: 50%;
+      z-index: 2;
+      border: 1px solid gray;
+      span{
+        border: 1px gray solid;
+        border-radius: 50%;
+        padding: 5px 6px;
+      }
+    }
+  }
+  #toys {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+
+    .stuffed-Animals {
+      background-color: #FFC12C;
+      width: 100%;
+      min-height: 200px;
+      border-radius: 17px;
+
+      .imgdivtoys {
+
+
+
+        img {
+          margin-top: -30px;
+          width: 100%;
+          height: auto;
+
+        }
+
+      }
+
+      .text {
+        text-align: center;
+        padding: 20px;
+
+        p {
+          font-size: 30px;
+          font-weight: 700;
+          color: white;
+        }
+
+        button {
+          border-style: none;
+          background-color: white;
+          color: black;
+          border-radius: 20px;
+          height: 40px;
+          width: 100px;
+
+        }
+      }
+    }
+
+    .stuffed-Animalstoys {
+      background-color: #FB416B;
+      width: 100%;
+      border-radius: 17px;
+      min-height: 200px;
+
+      .imgdivtoys {
+
+        img {
+          margin-top: -25px;
+          max-width: 100%;
+          height: auto;
+
+        }
+      }
+
+      .text {
+        padding: 20px;
+
+        p {
+          font-size: 30px;
+          font-weight: 700;
+          color: white;
+          padding-left: 20px;
+        }
+
+        button {
+          border-style: none;
+          background-color: white;
+          color: black;
+          border-radius: 20px;
+          height: 40px;
+          width: 100px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  #stuffed {
+    #stuffedToys {
+      display: flex;
+      justify-content: space-between;
+
+      .unitClass1 {
+        text-align: center;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #wooden {
+    #woodenToys {
+      display: flex;
+      justify-content: space-between;
+
+      .unitClass {
+        text-align: center;
+        background-color: #fff;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  #ourStory {
+    width: 100%;
+    min-height: 400px;
+    background: fixed;
+    background-size: auto auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        width: 75%;
+        margin-bottom: 28px;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+      a {
+        color: white;
+        background-color: #a5c926;
+        border-radius: 50%;
+        padding: 15px 20px;
+      }
+    }
+  }
+
+
+
+  #available {
+    .headText {
+      text-align: center;
+
+      span {
+        margin-bottom: 16px;
+        color: #a5c926;
+        font-size: 13px;
+        line-height: 16px;
+        font-weight: 600;
+
+      }
+
+      h2 {
+        width: 40%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 400;
+      }
+    }
+
+    .sideImage {
+      img {
+        width: 100%;
+        border-radius: 15px;
+      }
+
+
+    }
+
+    .sideText {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      button {
+        height: 48px;
+        padding: 12px 20px;
+        border: none;
+        justify-content: center;
+        border-radius: 24px;
+        background-color: #a5c926;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        text-align: center;
+
+        h2 {
+          width: 40%;
+          text-align: center;
+          margin: auto;
+        }
+      }
+    }
+
+
+
+  }
+
+
+
+  #subscribe {
+    .subBox {
+      width: 100%;
+      padding: 48px;
+      border-radius: 16px;
+      background-color: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+
+
+      .subItems {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .subForm {
+          width: 50%;
+          display: flex;
+          justify-content: end flex;
+
+          form {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+
+            input {
+              width: 70%;
+              height: 48px;
+              margin-bottom: 24px;
+              padding-right: 28px;
+              padding-left: 28px;
+              border: 2px solid #e5e5e5;
+              border-radius: 24px;
+              background-color: #f8f8f8;
+            }
+
+            button {
+              height: 48px;
+              padding: 12px 28px;
+              border-radius: 24px;
+              background-color: #a5c926;
+              color: #fff;
+              font-size: 14px;
+              line-height: 24px;
+              font-weight: 600;
+              text-align: center;
+              border: none;
+              margin-bottom: 30px;
+            }
+          }
+        }
+
+        .subText {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          span {
+            color: #a5c926;
+          }
+
+          h4 {
+            margin-top: 0px;
+            margin-bottom: 16px;
+            font-family: 'Varela Round', sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+          }
+
+          .span {
+            background-color: #a5c926;
+            border-radius: 50%;
+            padding: 18px 20px;
+            color: white;
+
+          }
+        }
+      }
+    }
+  }
+
+  #instagram {
+    .instagram {
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .instagramText {
+        span {
+          color: #a5c926;
+          margin: 15px 0px;
+        }
+
+        h3 {
+          font-size: 28px;
+        }
+      }
+
+      button {
+        height: 48px;
+        padding: 12px 28px;
+        border-radius: 24px;
+        background-color: #a5c926;
+        color: #fff;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        text-align: center;
+        border: none;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #a5c926;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+
+  .footerLogo {
+    a {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+
+  a {
+    color: white !important;
+  }
+
+  .box {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid white;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .soacialMedia {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .creators {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 990px) {
+
+  .soacialMedia {
+    display: none !important;
+  }
+
+  ul {
+    padding-left: 0 !important;
+    gap: 10px !important;
+    font-size: 14px;
+
+  }
+
+  .creators {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: start !important;
+  }
+
+  #subscribe {
+    .subItems {
+
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+
+
+      .subText {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .subForm {
+        width: 100% !important;
+
+        form {
+          width: 100%;
+          display: flex;
+          flex-direction: column !important;
+
+          * {
+            width: 100% !important;
+          }
+        }
+      }
+
+
+
+    }
+  }
+  .sideText{
+    text-align: center;
+    align-items: center !important;
+    .green{
+      margin: auto !important;
+    }
+  }
+  #available {
+    h2{
+      width: 100% !important;
+    }
+    .reverse{
+      flex-direction: column-reverse;
+    }
+  }
+  .gapper{
+    gap: 30px;
+  }
+
+}

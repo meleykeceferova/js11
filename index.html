@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>TASK-11</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ToyStore</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catalog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Delivery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+
+            </ul>
+            <div class="cartInformation">
+              <p type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">Cart <img
+                  src="./assets/images/5baf75c3bf02346640399fec_cart-icon.svg" alt=""> <span>0</span></p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content  ">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Your Cart</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body text-center d-flex align-items-center justify-content-center ">
+          No items found.
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id="helloToyStore">
+      <div class="helloBox">
+        <span>Say Hello to ToyStore</span>
+        <h1>Free Ecommerce Template for Webflow</h1>
+        <button>Open Catalog</button>
+      </div>
+      <a href="#shopNow"></a>
+    </section>
+    <section id="shopNow">
+      <a href="#toys"><span>•</span></a>
+    </section>
+
+    <section id="toys">
+      <div class="container">
+        <div class="row gapper">
+          <div class="col-lg-6">
+            <div class="stuffed-Animals">
+              <div class="row ">
+                <div class="col-6">
+                  <div class="imgdivtoys">
+                    <div class="img">
+                      <img src="./assets/images/5bae12942ca03553bf0d536c_33903-2-plush-toy-transparent-image-min.png"
+                        alt="toys">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="text">
+                    <p>Stuffed Animals</p>
+                    <button>Shop Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-6">
+            <div class="stuffed-Animalstoys">
+              <div class="row">
+                <div class="col-6">
+                  <div class="text">
+                    <p>Wooden Toys</p>
+                    <button>Shop Now</button>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="imgdivtoys">
+                    <div class="img">
+                      <img src="./assets/images/5baf529c7a16ad5b5fd9fdf3_33727-9-wooden-toy-transparent-image-min.png"
+                        alt="toys">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="stuffed">
+      <div class="container">
+        <h3>Stuffed Animals
+        </h3>
+        <div class="line">
+          <div class="green"></div>
+          <div class="gray"></div>
+        </div>
+        <div id="stuffedToys" class="row"></div>
+      </div>
+
+
+    </section>
+    <section id="wooden">
+      <div class="container">
+        <h3>Wooden Toys</h3>
+        <div class="line">
+          <div class="green"></div>
+          <div class="gray"></div>
+        </div>
+        <div id="woodenToys" class="row"></div>
+      </div>
+    </section>
+
+
+    <section id="ourStory">
+      <div class="box">
+        <span>About The Shop</span>
+        <h2>Watch Our Story</h2>
+        <p>There is no magic formula to write perfect ad copy. It is based on a number of factors, including ad
+          placement, demographic, even the consumer’s mood.</p>
+        <a href=""><i class="fa-solid fa-play"></i></a>
+      </div>
+    </section>
+
+    <section id="available">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="headText">
+              <span>Made for Webflow</span>
+              <h2>Simple & Colorful Ecommerce Template for Your Business</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row reverse">
+          <div class="col-lg-6">
+            <div class="sideText">
+              <h2>Available for FREE!
+              </h2>
+              <div class="line">
+                <div class="green"></div>
+              </div>
+              <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing
+                result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take
+                action. There is no magic formula to write perfect ad copy</p>
+              <button>GET IT NOW!</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="sideImage">
+              <img src="./assets/images/5bb5c77ee73150e2021b0db4_side-image-01.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="subscribe">
+      <div class="container">
+        <div class="subBox">
+          <div class="row">
+            <div class="col-12">
+              <div class="subItems">
+                <div class="subText">
+                  <span class="span"><i class="fa-solid fa-paper-plane"></i></span>
+                  <h4>Subscribe to our newsletter<br>
+                    & get <span>10% discount!</span></h4>
+                </div>
+                <div class="subForm">
+                  <form>
+                    <input placeholder="Enter your email address" type="email">
+                    <button>Subscribe</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instagram">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="instagram">
+              <div class="instagramText">
+                <span>@ElasticThemes</span>
+                <h3>We're on Instagram!</h3>
+              </div>
+              <div>
+                <button>See More Photos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="box">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="footerLogo">
+              <a href="">ToyStore</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <ul>
+              <li><a href="">Home</a>
+              </li>
+              <li><a href="">Catalog</a>
+              </li>
+              <li><a href="">Delivery</a>
+              </li>
+              <li><a href="">About</a>
+              </li>
+              <li><a href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-12">
+            <div class="soacialMedia">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="creators">
+        <p>Created with love by <a href="">Elastic Themes</a></p>
+        <p>Powered by
+          <a href="">Webflow</a>
+          <a href="">Style Guide</a>
+          <a href="">Licensing</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/wooden.js"></script>
+  <script src="./assets/js/stuffed.js"></script>
+</body>
+
+</html>

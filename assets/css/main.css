@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 80%;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  z-index: 3;
+}
+header nav .cartInformation span {
+  padding: 4px 8px;
+  border-radius: 50%;
+  background-color: #a5c926;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.modal-dialog,
+.modal-content {
+  height: 45%;
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main .cardTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .cardTextBox p {
+  background-color: #a5c926;
+  border-radius: 9px;
+  color: white;
+  width: 50%;
+}
+main .line {
+  width: 100%;
+  display: flex;
+  margin: 25px 0px;
+}
+main .line .green {
+  width: 15%;
+  height: 3px;
+  background-color: #a5c926;
+}
+main .line .gray {
+  width: 85%;
+  height: 3px;
+  background-color: rgb(186, 181, 181);
+}
+main #helloToyStore {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #helloToyStore .helloBox {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 570px;
+  min-height: 300px;
+  background-color: #fff;
+}
+main #helloToyStore .helloBox span {
+  margin-bottom: 16px;
+  color: #a5c926;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+}
+main #helloToyStore .helloBox h1 {
+  width: 80%;
+  margin-bottom: 20px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 400;
+}
+main #helloToyStore .helloBox button {
+  height: 48px;
+  padding: 12px 20px;
+  border: none;
+  justify-content: center;
+  border-radius: 24px;
+  background-color: #a5c926;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+main #shopNow {
+  width: 100%;
+  display: flex;
+}
+main #shopNow a {
+  margin: auto;
+  margin-top: -55px;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 15px 15px;
+  border-radius: 50%;
+  z-index: 2;
+  border: 1px solid gray;
+}
+main #shopNow a span {
+  border: 1px gray solid;
+  border-radius: 50%;
+  padding: 5px 6px;
+}
+main #toys {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+}
+main #toys .stuffed-Animals {
+  background-color: #FFC12C;
+  width: 100%;
+  min-height: 200px;
+  border-radius: 17px;
+}
+main #toys .stuffed-Animals .imgdivtoys img {
+  margin-top: -30px;
+  width: 100%;
+  height: auto;
+}
+main #toys .stuffed-Animals .text {
+  text-align: center;
+  padding: 20px;
+}
+main #toys .stuffed-Animals .text p {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+main #toys .stuffed-Animals .text button {
+  border-style: none;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+}
+main #toys .stuffed-Animalstoys {
+  background-color: #FB416B;
+  width: 100%;
+  border-radius: 17px;
+  min-height: 200px;
+}
+main #toys .stuffed-Animalstoys .imgdivtoys img {
+  margin-top: -25px;
+  max-width: 100%;
+  height: auto;
+}
+main #toys .stuffed-Animalstoys .text {
+  padding: 20px;
+}
+main #toys .stuffed-Animalstoys .text p {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  padding-left: 20px;
+}
+main #toys .stuffed-Animalstoys .text button {
+  border-style: none;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+  margin-left: 20px;
+}
+main #stuffed #stuffedToys {
+  display: flex;
+  justify-content: space-between;
+}
+main #stuffed #stuffedToys .unitClass1 {
+  text-align: center;
+}
+main #stuffed #stuffedToys .unitClass1 img {
+  width: 100%;
+}
+main #wooden #woodenToys {
+  display: flex;
+  justify-content: space-between;
+}
+main #wooden #woodenToys .unitClass {
+  text-align: center;
+  background-color: #fff;
+}
+main #wooden #woodenToys .unitClass img {
+  width: 100%;
+}
+main #ourStory {
+  width: 100%;
+  min-height: 400px;
+  background: fixed;
+  background-size: auto auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #ourStory .box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+main #ourStory .box h2 {
+  font-size: 2rem;
+}
+main #ourStory .box p {
+  width: 75%;
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 24px;
+}
+main #ourStory .box a {
+  color: white;
+  background-color: #a5c926;
+  border-radius: 50%;
+  padding: 15px 20px;
+}
+main #available .headText {
+  text-align: center;
+}
+main #available .headText span {
+  margin-bottom: 16px;
+  color: #a5c926;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+}
+main #available .headText h2 {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+main #available .sideImage img {
+  width: 100%;
+  border-radius: 15px;
+}
+main #available .sideText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main #available .sideText button {
+  height: 48px;
+  padding: 12px 20px;
+  border: none;
+  justify-content: center;
+  border-radius: 24px;
+  background-color: #a5c926;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+main #available .sideText button h2 {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+main #subscribe .subBox {
+  width: 100%;
+  padding: 48px;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+}
+main #subscribe .subBox .subItems {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main #subscribe .subBox .subItems .subForm {
+  width: 50%;
+  display: flex;
+  justify-content: end flex;
+}
+main #subscribe .subBox .subItems .subForm form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+main #subscribe .subBox .subItems .subForm form input {
+  width: 70%;
+  height: 48px;
+  margin-bottom: 24px;
+  padding-right: 28px;
+  padding-left: 28px;
+  border: 2px solid #e5e5e5;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+}
+main #subscribe .subBox .subItems .subForm form button {
+  height: 48px;
+  padding: 12px 28px;
+  border-radius: 24px;
+  background-color: #a5c926;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  margin-bottom: 30px;
+}
+main #subscribe .subBox .subItems .subText {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main #subscribe .subBox .subItems .subText span {
+  color: #a5c926;
+}
+main #subscribe .subBox .subItems .subText h4 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+main #subscribe .subBox .subItems .subText .span {
+  background-color: #a5c926;
+  border-radius: 50%;
+  padding: 18px 20px;
+  color: white;
+}
+main #instagram .instagram {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main #instagram .instagram .instagramText span {
+  color: #a5c926;
+  margin: 15px 0px;
+}
+main #instagram .instagram .instagramText h3 {
+  font-size: 28px;
+}
+main #instagram .instagram button {
+  height: 48px;
+  padding: 12px 28px;
+  border-radius: 24px;
+  background-color: #a5c926;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-color: #a5c926;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+footer .footerLogo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+}
+footer a {
+  color: white !important;
+}
+footer .box {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid white;
+}
+footer .box ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+footer .box ul li a {
+  text-decoration: none;
+}
+footer .box .soacialMedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .creators {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 990px) {
+  .soacialMedia {
+    display: none !important;
+  }
+  ul {
+    padding-left: 0 !important;
+    gap: 10px !important;
+    font-size: 14px;
+  }
+  .creators {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    align-items: start !important;
+  }
+  #subscribe .subItems {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  #subscribe .subItems .subText {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #subscribe .subItems .subForm {
+    width: 100% !important;
+  }
+  #subscribe .subItems .subForm form {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+  }
+  #subscribe .subItems .subForm form * {
+    width: 100% !important;
+  }
+  .sideText {
+    text-align: center;
+    align-items: center !important;
+  }
+  .sideText .green {
+    margin: auto !important;
+  }
+  #available h2 {
+    width: 100% !important;
+  }
+  #available .reverse {
+    flex-direction: column-reverse;
+  }
+  .gapper {
+    gap: 30px;
+  }
+}
